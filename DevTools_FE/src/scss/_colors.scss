@@ -1,0 +1,15 @@
+$colors: (
+  color-dark: #1E2027,
+  color-dark-light: #172B4D,
+  color-gray: rgba(9, 30, 66, 0.04),
+  cerberus-dark: #05386B,
+  cerberus-third: #379683,
+  cerberus-shade: #EDF5E1,
+  cerberus-second: #5CDB95,
+  cerberus-main: #5CDB95,
+  header-light: #8F99A3
+);
+
+@function color($color-name){
+  @return map-get($colors,$color-name);
+}

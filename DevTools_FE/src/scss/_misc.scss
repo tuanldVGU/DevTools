@@ -1,0 +1,30 @@
+.is-flex {
+  display: flex;
+}
+.gray-text {
+  color: color(color-dark-light);
+}
+
+.text-is-small {
+  font-size: 10px;
+}
+
+.text-is-15 {
+  font-size: 15px;
+}
+
+.text-is-big {
+  font-size: 60px;
+}
+
+.text-is-vertical {
+  writing-mode: tb-rl;
+}
+
+.button {
+  &.is-gray {
+    background-color: color(color-gray);
+    border-color: transparent;
+    color: color(color-dark-light);
+  }
+}

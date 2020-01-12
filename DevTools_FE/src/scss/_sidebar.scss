@@ -1,0 +1,112 @@
+$width: 200px;
+$width-compressed: 53.25px;
+$font-size: 15px;
+$font-size-sub: 10px;
+$font-sub: 'Open Sans', sans-serif;
+$font-brand: 'Barlow', sans-serif;
+
+.sidenav{
+  z-index: 100;
+  display: grid;
+  position: fixed;
+  width: $width;
+  height: 100%;
+  background-color: color(color-dark);
+  grid-template-rows: 64px auto 48px;
+
+  .app_name{
+    display: flex;
+    .logo {
+      margin: 20px 2.5px;
+    }
+    .brandName {
+      font-family: $font-brand;
+      font-size: $font-size;
+      padding: 23px 0;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  .main-buttons{
+    list-style-type: none;
+    margin-bottom: 64px;
+    padding: 0;
+    color: #fff;
+    li{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: $font-sub;
+      font-size: $font-size-sub;
+      font-weight: 600;
+      width: $width;
+    }
+    
+    & > li{
+      padding: 16px 0;
+      @include box-sizing(border-box);
+
+      i{
+        font-size: $font-size;
+        color: lighten(color(color-dark), 16);
+        margin: 0 20px;
+      }
+
+      &:hover, &:active, &:focus{
+        .hidden{
+          width: $width - $width-compressed;
+        }
+        background-color: lighten(color(color-dark), 5);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .end {
+    i {
+      font-size: $font-size;
+      color: lighten(color(color-dark), 16);
+      margin: 0 20px;
+    }
+    a{
+      font-size: $font-size-sub;
+      font-family: $font-sub;
+      padding: 23px 0;
+      text-transform: uppercase;
+      color: #fff;
+      width: 100%;
+    }
+  }
+  
+  .hidden{
+    width: 0;
+    height: 100%;
+    padding: 64px 0;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+    
+    list-style-type: none;
+    background-color: lighten(color(color-dark), 5);
+    @include transition(0.3s);
+    li{
+      font-size: $font-size-sub;
+      padding: 16px 24px;
+      &:hover, &:active, &:focus{
+        background-color: lighten(color(color-dark), 9);
+      }
+      a {
+        color: #fff;
+        &:hover, &:active, &:focus{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,19 @@
+@import './_dataList';
+$sidebar-width: 200px;
+$topnav-height: 56px;
+.appContent {
+  width: calc(100vh - $sidebar-width);
+  height: calc(100vh - $topnav-height);
+  margin-left: $sidebar-width;
+  padding: $topnav-height 30px;
+}
+.project {
+  margin: 10px 0px;
+}
+
+.content {
+  padding: 10px 1.5rem;
+  & > div {
+    padding-bottom: 10px;
+  }
+}

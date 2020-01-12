@@ -1,0 +1,12 @@
+html,body{
+  height:100%;
+  overflow-y: hidden;
+}
+body{
+  background-color: lighten($color-dark, 68);
+  line-height: 30px;
+  overflow-y: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
