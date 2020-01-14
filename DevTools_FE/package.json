@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bulma": "^0.8.0",
     "compass-sass-mixins": "^0.12.7",
+    "mongoose": "^5.8.7",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
