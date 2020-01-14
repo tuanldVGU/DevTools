@@ -10,7 +10,9 @@
   "author": "tuanld",
   "license": "ISC",
   "dependencies": {
+    "dotenv-extended": "^2.7.1",
     "express": "^4.17.1",
+    "mongoose": "^5.8.7",
     "nodemon": "^2.0.2"
   }
 }
