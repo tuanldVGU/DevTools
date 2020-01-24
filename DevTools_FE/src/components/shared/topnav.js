@@ -11,11 +11,11 @@ const Topnav = props =>{
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
-            { props.username }
+
           </div>
           <div className="navbar-item">
-            <div className="buttons is-danger">
-              <button className="delete" onClick={props.logOut}></button>
+            <div className="buttons">
+              <button className="btn-close delete" onClick={props.logOut}></button>
             </div>
           </div>
         </div>

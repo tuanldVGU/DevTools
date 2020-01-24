@@ -1,0 +1,77 @@
+
+.project-header{
+  padding: 0.5rem 0;
+  .project-logo {
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+    border-radius: .25rem;
+    margin: 0.45rem 0.75rem;
+  }
+  .project-info {
+    padding: 0;
+    width: 500px;
+    .project-desc{
+      font-size: 12px;
+      overflow: hidden;
+      word-break: break-all;
+      text-overflow: word;
+    }
+  }
+  #dd-project{
+    padding: 1rem;
+  }
+}
+
+.dashboard-icon-center {
+  font-size: 27px;
+  display: inline-block;
+  padding: 6px 13px;
+  vertical-align: bottom;
+  margin: 10px 0;
+}
+
+.is-mini-title{
+  margin: -1.25rem 0 1.25rem 0!important;
+}
+
+.progress-info{
+  padding: 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  .progress-content{
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    .content-left{
+      .heading{
+        opacity: .8;
+        font-weight: bold;
+      }
+      .subheading{
+        opacity: .5;
+      }
+    }
+    .content-right{
+      margin-left: auto;
+      font-weight: bold;
+      font-size: 1.8rem;
+      display: block;
+    }
+    padding-bottom: 16px;
+  }
+  .progress-detail{
+    progress{
+      margin-bottom: 16px!important;
+    }
+    .progress-note{
+      opacity: .5;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      .right{
+        margin-left: auto;
+      }
+    }
+  }
+}

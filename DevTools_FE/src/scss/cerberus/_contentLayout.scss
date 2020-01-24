@@ -1,12 +1,32 @@
 @import './_dataList';
+@import './_dashboard';
+
 $sidebar-width: 200px;
+$sidebar-compressed: 53.25px;
 $topnav-height: 56px;
-.appContent {
-  width: calc(100vh - $sidebar-width);
-  height: calc(100vh - $topnav-height);
-  margin-left: $sidebar-width;
-  padding: $topnav-height 30px;
+.Cerberus{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: stretch!important;
+  align-items: stretch!important;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  .appContent {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    margin-left: $sidebar-width;
+    &.collapse{
+      margin-left: $sidebar-compressed;
+    }
+  }
 }
+
 .project {
   margin: 10px 0px;
 }

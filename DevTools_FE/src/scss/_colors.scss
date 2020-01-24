@@ -7,7 +7,10 @@ $colors: (
   cerberus-shade: #EDF5E1,
   cerberus-second: #5CDB95,
   cerberus-main: #5CDB95,
-  header-light: #8F99A3
+  header-light: #8F99A3,
+  bulma-primary: #00d1b2,
+  bulma-danger: #ff3860,
+  bulma-info: #209CEE
 );
 
 @function color($color-name){

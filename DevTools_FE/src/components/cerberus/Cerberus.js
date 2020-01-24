@@ -100,10 +100,10 @@ const Cerberus = props =>{
   return (
     <div className="Cerberus">
       {
-        props.isAuthenticated ? <Topnav username={props.activeUser}></Topnav>: null
+        props.isAuthenticated ? <Topnav></Topnav>: null
       }
       {
-        props.isAuthenticated === true ? <Sidebar logo={data.sidebar_logo} items={data.sidebar_items}></Sidebar>: null
+        props.isAuthenticated === true ? <Sidebar logo={data.sidebar_logo} items={data.sidebar_items} user={props.activeUser}></Sidebar>: null
       }
       <Switch>
         <Route path={`${match.path}/login`}>
@@ -112,7 +112,7 @@ const Cerberus = props =>{
           }
         </Route>
         <ProtectedRoute path={`${match.path}/`} exact>
-          <Dashboard user={props.activeUser} project={props.activeProject} changeProj={props.changeProject}></Dashboard>
+          <Dashboard user={props.activeUser} project={props.activeProject} changeProj={props.changeProject} projects={props.projects}></Dashboard>
         </ProtectedRoute>
         <ProtectedRoute path={`${match.path}/testplans`} exact>
           <Testplans sets={props.testplans}></Testplans>
@@ -139,7 +139,8 @@ const mapStateToProps = state => {
     testsets: state.Testsets,
     testcases: state.Testcases,
     testplans: state.Testplans,
-    testtemps: state.Testtemps
+    testtemps: state.Testtemps,
+    projects: state.projects
   };
 }
 

@@ -10,12 +10,12 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension'; 
-import logger from 'redux-logger'; 
+// import logger from 'redux-logger'; 
 import reducer from './store/reducer';
 
 //Create redux store
 const store = createStore(reducer, composeWithDevTools(
-  applyMiddleware(logger)
+  applyMiddleware()
 ));
 
 const app = (

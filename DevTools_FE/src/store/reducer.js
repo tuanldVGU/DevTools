@@ -74,6 +74,14 @@ const initialState = {
         }
       ]
     }
+  ],
+  projects: [
+    {
+      id: "p_01",
+      name: "Hello world",
+      startDate: null,
+      endDate: null
+    }
   ]
 }
 

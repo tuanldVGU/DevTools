@@ -1,0 +1,17 @@
+.button {
+  &.is-gray {
+    background-color: color(color-gray);
+    border-color: transparent;
+    color: color(color-dark-light);
+  }
+}
+
+$btn-close-color-before: #e74c3c;
+$btn-close-color-after: #c0392b;
+.btn-close {
+  background-color: $btn-close-color-before;
+  &:hover {
+    background-color: $btn-close-color-after;
+  }
+
+}

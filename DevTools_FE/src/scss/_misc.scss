@@ -1,30 +1,50 @@
+@import './misc/_text';
+@import './misc/_button';
+
 .is-flex {
   display: flex;
 }
-.gray-text {
-  color: color(color-dark-light);
+
+.m-1-center {
+  margin: 1rem auto!important;
 }
 
-.text-is-small {
-  font-size: 10px;
+.pl-16{
+  padding-left: 16px!important;
 }
 
-.text-is-15 {
-  font-size: 15px;
+.mt-1{
+  margin-top: 1rem;
 }
 
-.text-is-big {
-  font-size: 60px;
+.mb-0{
+ margin-bottom: 0!important;
 }
 
-.text-is-vertical {
-  writing-mode: tb-rl;
+.height-300{
+  height: 300px;
 }
 
-.button {
-  &.is-gray {
-    background-color: color(color-gray);
-    border-color: transparent;
-    color: color(color-dark-light);
-  }
+.height-400{
+  height: 400px;
 }
+
+
+.dropdown-menu{
+  margin-top: -1rem;
+}
+
+.is-54x54{
+  width: 54px;
+  height: 54px;
+}
+.is-27x27{
+  width:27px;
+  height: 27px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+
