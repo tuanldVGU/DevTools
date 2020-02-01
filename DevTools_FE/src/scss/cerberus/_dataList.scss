@@ -16,15 +16,18 @@
     padding: .75rem 1rem;
   }
 }
-// .card-table{
-//   &:nth-child(2n){
-//     background-color: #CCC;
-//   }
-// }
 
 .dataList{
-  &:first-child {
-    width: 20px;
+  width: 100%;
+  th,tr {
+    // width: 25%;
+    text-align: center!important;
+  }
+  
+  tbody{
+    &:first-child {
+      width: 20px;
+    }
   }
 }
 

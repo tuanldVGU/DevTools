@@ -5,6 +5,9 @@
   display: flex;
 }
 
+.m-1 {
+  margin: 1rem;
+}
 .m-1-center {
   margin: 1rem auto!important;
 }
@@ -47,4 +50,7 @@
   border-radius: 50%;
 }
 
+.is-right{
+  float: right;
+}
 

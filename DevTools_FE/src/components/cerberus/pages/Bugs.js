@@ -2,20 +2,18 @@ import React from 'react';
 import TestComponentlist from '../../shared/test_component/list';
 import ListCompontentHeader from '../../shared/test_component/listHeader';
 
-const Testsets = props => {
-  let logo = "fa-vials text-is-23";
-  let description = "Test set is a set of testcase with of the same feature or test purposes.";
-  let bg_color= "has-background-info";
+const Bugs = props => {
+  let logo = "fas fa-bug has-text-danger";
+  let description = "The deflect occurs inside a features";
   return(
     <div className="appContent">
        <ListCompontentHeader 
-        name="Testsets" 
+        name="Bugs" 
         desc={description}
-        logo={logo}
-        color={bg_color}></ListCompontentHeader>
+        logo={logo}></ListCompontentHeader>
       <TestComponentlist list={props.sets}></TestComponentlist>
     </div>
   );
 }
 
-export default Testsets;
+export default Bugs;

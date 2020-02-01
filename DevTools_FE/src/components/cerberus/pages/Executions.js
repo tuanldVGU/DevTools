@@ -1,16 +1,15 @@
 import React from 'react';
-
 import TestComponentlist from '../../shared/test_component/list';
 import ListCompontentHeader from '../../shared/test_component/listHeader';
 
-const Testplans = props => {
-  let logo = "fa-clipboard";
-  let description = "Test case is the senario design to test the features of a program.";
-  let bg_color= "has-background-grey-light";
+const Executions = props => {
+  let logo = "fa-clipboard-check";
+  let description = "Execution is a record of the testing processes";
+  let bg_color= "has-background-success";
   return(
     <div className="appContent">
-      <ListCompontentHeader 
-        name="Testplans" 
+       <ListCompontentHeader 
+        name="Executions" 
         desc={description}
         logo={logo}
         color={bg_color}></ListCompontentHeader>
@@ -19,4 +18,4 @@ const Testplans = props => {
   );
 }
 
-export default Testplans;
+export default Executions;

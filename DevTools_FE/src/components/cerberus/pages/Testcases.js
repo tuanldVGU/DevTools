@@ -1,69 +1,20 @@
 import React from 'react';
 
-import TestComponentheader from '../../shared/test_component/header';
 import TestComponentlist from '../../shared/test_component/list';
+import ListCompontentHeader from '../../shared/test_component/listHeader';
 
 const Testcases = props => {
-  let selected = 0;
   let logo = "fa-vial";
+  let bg_color= "has-background-primary";
+  let description = "Test case is the senario design to test the features of a program.";
   return(
     <div className="appContent">
-      <div className="columns">
-        <div className="column is-4">
-          <TestComponentlist name="Testcases" list={props.sets} logo={logo}></TestComponentlist>
-        </div>
-        <div className="column is-8">
-          <div className="card">
-            {/* Brief */}
-            <TestComponentheader name={props.sets[selected].name} author={props.sets[selected].author} logo={logo}></TestComponentheader>
-            {/* Details */}
-            <div className="content">
-              <div class="field is-grouped">
-                <p class="control">
-                  <button className="button is-primary is-small">{props.sets[selected].feature}</button>
-                </p>
-                <p class="control">
-                  <button className="button is-gray is-small">
-                    <span className="icon"><i class="fas fa-paperclip"></i></span>
-                    <span>Attach</span>
-                  </button>
-                </p>
-                <p class="control">
-                  <button className="button is-gray is-small">
-                    <span className="icon"><i class="fas fa-link"></i></span>
-                    <span>Link</span>
-                  </button>
-                </p>
-                <p class="control">
-                  <button className="button is-gray is-small">
-                    <span className="icon"><i class="far fa-plus-square"></i></span>
-                    <span>New template</span>
-                  </button>
-                </p>
-              </div>
-              <div className="description">
-                <p className="gray-text">Description:</p>
-                <p>{props.sets[selected].desc}</p>
-              </div>
-              <div className="content-list">
-                <p className="gray-text">Steps:</p>
-                {/* {
-                  props.sets[selected].testcases.map(testcase => {
-                    return (
-                      <a className="panel-block" key={testcase.id} href={`/cerberus/testcase/?id=${testcase.id}`}>
-                        <span className="panel-icon">
-                          <i className="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        <span>{testcase.name}</span>
-                      </a>
-                    );
-                  })
-                } */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ListCompontentHeader 
+        name="Testcases"
+        desc={description}
+        logo={logo}
+        color={bg_color}></ListCompontentHeader>
+      <TestComponentlist list={props.sets} ></TestComponentlist>
     </div>
   );
 }

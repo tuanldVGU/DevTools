@@ -26,7 +26,6 @@ const Dashboard = props => {
   };
   return (
     <div className="appContent">
-
       {/* Dashboard header */}
       <article className="media project-header">
         <figure className="media-left project-logo">

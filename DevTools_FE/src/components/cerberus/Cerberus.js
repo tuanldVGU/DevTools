@@ -11,6 +11,8 @@ import Testsets from './pages/Testsets';
 import Testplans from './pages/Testplans';
 import Testcases from './pages/Testcases';
 import Testtemplate from './pages/Template';
+import Execution from './pages/Executions';
+import Bug from './pages/Bugs';
 
 const Cerberus = props =>{  
   let match = useRouteMatch();
@@ -66,7 +68,7 @@ const Cerberus = props =>{
           {
             id:'sb_s_02_04',
             name: 'Execution',
-            link: '/cerberus/testmanager/execution'
+            link: '/cerberus/executions'
           }
         ]
       },
@@ -125,6 +127,12 @@ const Cerberus = props =>{
         </ProtectedRoute>
         <ProtectedRoute path={`${match.path}/temps`} exact>
           <Testtemplate sets={props.testtemps}></Testtemplate>
+        </ProtectedRoute>
+        <ProtectedRoute path={`${match.path}/executions`} exact>
+          <Execution sets={[]}></Execution>
+        </ProtectedRoute>
+        <ProtectedRoute path={`${match.path}/bugs`} exact>
+          <Bug sets={[]}></Bug>
         </ProtectedRoute>
       </Switch>
     </div>

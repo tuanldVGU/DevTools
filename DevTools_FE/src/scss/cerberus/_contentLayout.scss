@@ -1,5 +1,6 @@
 @import './_dataList';
 @import './_dashboard';
+@import './_listComponent';
 
 $sidebar-width: 200px;
 $sidebar-compressed: 53.25px;
@@ -37,3 +38,4 @@ $topnav-height: 56px;
     padding-bottom: 10px;
   }
 }
+
